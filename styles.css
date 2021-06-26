@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -5,16 +7,20 @@
     user-select: none;
 }
 
-.caption, .caption2, .caption3 {
+body {
+    font-family: 'Poppins';
+}
+
+.caption, .caption2, .caption3, .caption4{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .description {
     margin-top: 400px;
-    font-family: Lato, sans-serif;
     font-size: 25px;
     color: #FFF;
     background-color: #111;
@@ -26,11 +32,10 @@
 
 .title {
     margin-top: 400px;
-    font-family: Lato, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #FFF;
     background-color: #111;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     padding: 18px;
 }
 
@@ -40,6 +45,31 @@
     width: auto;
 }
 
+.container1, .container2, .container3 {
+    padding: 40px;
+}
+
+.container2, .container3 {
+    background-color: black;
+    color: #fff;
+}
+
+.title1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.p1 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #111;
+    font-weight: bold;
+    line-height: 28px;
+}
+
 .bgimg-2 {
     background-image: url(blueforest.jpg);
     min-height: 100vh;
@@ -47,15 +77,51 @@
 }
 
 .bgimg-3 {
-    min-height: 100vh;
+    background-image: url(turquoise_mountains_4k.jpg);
+    min-height: 50vh;
     width: auto;
-    background-color: #111;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3{
+.bgimg-4 {
+    background-image: url(view.jpg);
+    min-height: 100vh;
+    width: auto;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
     position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.botnavbar {
+    background-color: #111;
+    color: #fff;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.linksbot li {
+    margin: 20px;
+}
+
+.less {
+    max-width: 50%;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
